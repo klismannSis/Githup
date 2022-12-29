@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/2048px-Wikipedia_logo_v3.svg.png" sizes="192x192">
+    
+        <link rel="stylesheet" href="css/style.css">
+    
+        <title>Eliminar Página</title>
+    </head>
+    <body>
+        <form action="./cgi-bin/delete.pl" method="POST">
+            <label for="owner">Usuario: </label> <br>
+            <input type="text" name="owner" required><br/>
+
+            <label for="title">Título: </label> <br>
+            <input type="text" name="title" required><br/>
+            
+            <br>
+            <input type="submit" value="Enviar"/>
+        </form>
+
+        <h3><a href="./index.html">Volver al inicio</a></h3>
+    </body>
+</html>

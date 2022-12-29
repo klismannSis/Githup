@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/2048px-Wikipedia_logo_v3.svg.png" sizes="192x192">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Registro</title>
+</head>
+<body>
+    <nav class="navbar">
+        <br><br>    
+        <div> 
+            <ul class="list">
+                <li><a href="./index.html">Inicio</a></li>
+
+                <li><a href="./register.html">Sing up</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./new.html">Nueva Página</a></li>
+                <li><a href="./list.html">Ver Listado de Páginas</a></li>
+                <li><a href="./view.html">Ver Página</a></li>
+                <li><a href="./delete.html">Eliminar Página</a></li>
+                <li><a href="./article.html">Artículo</a></li>
+                <li><a href="./update.html">Actualizar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <form action="cgi-bin/register.pl" method="post">
+        <section class="registro" style="text-align: center">
+            <h4>REGISTRATE</h4>
+            <input class="control" type="text" name="firstName" placeholder="Ingrese Nombre">
+            <input class="control" type="text" name="lastName" placeholder="Ingrese Apellido">
+            <input class="control" type="text" name="userName" placeholder="Ingrese Usuario">
+            <input class="control" type="password" name="password" placeholder="Ingrese Contraseña">
+            <br><br>
+            <input  class="boton" type="submit" value="Registrate">
+            <br><br>
+            <a href="index.html">Regresar</a>
+
+        </section>
+
+    </form>
+
+
+</body>
+</html>

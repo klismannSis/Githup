@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(66,84,240);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction:column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding-block: 10px;
+}
+
+.navbar ul {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.nav li {
+  display: inline-flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  width: 150px;
+}
+
+.logo {
+  /*    margin-right: 50px; */
+  margin-right: auto;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+#toggler,
+.navbar label {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+#toggler :checked ~ .menu {
+  max-height: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0.5);
+}
+
+.box {
+  padding: 35px;
+  margin: 21px;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.box h1 {
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  margin-top: auto;
+}
+footer p {
+  text-align: center;
+  padding: 6px;
+}
+
+/* nice gray: #1f2327 */
